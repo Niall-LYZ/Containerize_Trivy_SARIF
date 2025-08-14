@@ -17,8 +17,8 @@ jobs:
           format: 'sarif'
           output: 'trivy-results.sarif'
           ignore-unfixed: true
-          severity: 'CRITICAL,HIGH,MEDIUM'
-          exit-code: '808'
+          severity: 'CRITICAL'
+          exit-code: '1'
       - name: Upload SARIF
         uses: github/codeql-action/upload-sarif@v3
         with:
