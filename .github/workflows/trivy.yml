@@ -13,7 +13,7 @@ jobs:
         uses: aquasecurity/trivy-action@0.32.0
         with:
           scan-type: 'fs'
-          scanners: 'vuln,config,secret'
+          scanners: 'vuln,misconfig,secret'
           format: 'sarif'
           output: 'trivy-results.sarif'
           ignore-unfixed: true
